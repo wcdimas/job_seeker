@@ -1,0 +1,46 @@
+{
+  "personal_information": {
+    "name": "Jane Doe",
+    "location": "New York, USA",
+    "email": "jane.doe@example.com",
+    "phone": "+1 555-1234",
+    "links": {
+      "github": "https://github.com/janedoe",
+      "linkedin": "https://www.linkedin.com/in/janedoe"
+    }
+  },
+  "summary": "Experienced Software Engineer with a focus on automation and scalable backend architectures.",
+  "experience": [
+    {
+      "company": "Tech Corp",
+      "location": "Remote",
+      "period": "Jan'20 - Present",
+      "title": "Software Engineer",
+      "responsibilities": [
+        "Developed scalable backend APIs using Python and FastAPI.",
+        "Implemented RPA bots to automate internal data entry processes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Technology",
+      "location": "New York, USA",
+      "period": "2015 - 2019",
+      "degree": "Bachelor's in Computer Science",
+      "description": "Graduated with honors. Focused on AI and Distributed Systems."
+    }
+  ],
+  "skills": {
+    "programming": [
+      "Python",
+      "JavaScript",
+      "SQL"
+    ],
+    "tools": [
+      "Git",
+      "Docker",
+      "AWS"
+    ]
+  }
+}

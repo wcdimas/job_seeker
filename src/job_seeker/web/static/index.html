@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Job Seeker Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-mesh">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="app-container">
+        <header class="glass-header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fa-solid fa-robot"></i>
+                    <h1>Job Seeker AI</h1>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-badge">
+                        <span id="total-jobs">0</span> Total
+                    </div>
+                    <div class="stat-badge success">
+                        <span id="applied-jobs">0</span> Applied
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="filters glass-panel">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search skills, roles or reasons...">
+                </div>
+                <div class="filter-toggles">
+                    <button class="btn-toggle active" data-filter="all">All</button>
+                    <button class="btn-toggle" data-filter="matches">High Match (≥80)</button>
+                    <button class="btn-toggle" data-filter="applied">Applied</button>
+                </div>
+                <button class="btn-primary" onclick="loadJobs()">
+                    <i class="fa-solid fa-rotate-right"></i> Refresh
+                </button>
+            </div>
+
+            <div class="jobs-grid" id="jobs-grid">
+                <!-- Job cards will be injected here by JS -->
+                <div class="loading-state">
+                    <div class="spinner"></div>
+                    <p>Loading your opportunities...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
